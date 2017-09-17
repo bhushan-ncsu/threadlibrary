@@ -303,7 +303,7 @@ void MyThreadExit(void){
 MySemaphore MySemaphoreInit(int initialValue){
 
   //Case 1: If initialValue is invalid then return NULL
-  if(initialValue <= 0)
+  if(initialValue < 0)
     return NULL;
 
   //Case 2: Create semaphore and set the initial value
